@@ -1,7 +1,6 @@
 import 'package:fav_list/favourite_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class HomePage2 extends StatefulWidget {
   const HomePage2({super.key});

@@ -1,5 +1,4 @@
-import 'package:fav_list/home_page.dart';
-import 'package:fav_list/home_page2.dart';
+import 'package:fav_list/image_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
@@ -10,6 +9,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(title: 'Material App', home: HomePage2());
+    return GetMaterialApp(title: 'Material App', home: ImagePicker());
   }
 }

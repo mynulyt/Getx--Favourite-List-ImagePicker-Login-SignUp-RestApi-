@@ -16,10 +16,23 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Login Screen")),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [TextFormField(decoration: InputDecoration())],
+      body: Padding(
+        padding: const EdgeInsets.only(left: 12, right: 12),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TextFormField(
+              controller: controller.emailController.value,
+              decoration: InputDecoration(hintText: 'Enter your email..'),
+            ),
+            SizedBox(height: 20),
+            TextFormField(
+              controller: controller.passwordController.value,
+              decoration: InputDecoration(hintText: 'Enter your password...'),
+            ),
+          ],
+        ),
       ),
     );
   }

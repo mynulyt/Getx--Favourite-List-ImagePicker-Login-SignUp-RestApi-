@@ -31,6 +31,31 @@ class _LoginScreenState extends State<LoginScreen> {
               controller: controller.passwordController.value,
               decoration: InputDecoration(hintText: 'Enter your password...'),
             ),
+            SizedBox(height: 40),
+            InkWell(
+              onTap: () {
+                controller.LoginApi();
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Colors.greenAccent,
+                ),
+                height: 60,
+                width: 390,
+
+                child: Center(
+                  child: Text(
+                    "Login",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

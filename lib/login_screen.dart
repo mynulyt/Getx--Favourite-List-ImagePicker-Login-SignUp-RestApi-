@@ -1,5 +1,6 @@
 import 'package:fav_list/Login_screem_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 
@@ -32,28 +33,33 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: InputDecoration(hintText: 'Enter your password...'),
             ),
             SizedBox(height: 40),
-            InkWell(
-              onTap: () {
-                controller.LoginApi();
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.greenAccent,
-                ),
-                height: 60,
-                width: 390,
+            Obx(
+              () => InkWell(
+                onTap: () {
+                  controller.LoginApi();
+                },
+                child:
+                    controller.loading.value
+                        ? CircularProgressIndicator()
+                        : Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.greenAccent,
+                          ),
+                          height: 60,
+                          width: 390,
 
-                child: Center(
-                  child: Text(
-                    "Login",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
+                          child: Center(
+                            child: Text(
+                              "Login",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
               ),
             ),
           ],

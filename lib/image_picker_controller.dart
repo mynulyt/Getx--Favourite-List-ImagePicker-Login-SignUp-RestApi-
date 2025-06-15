@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
+//Image picker using getx
 
 class ImagepickerController extends GetxController {
   RxString imagePath = ''.obs;

@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart';
+//login method handling using by getx
 
 class LoginScreemController extends GetxController {
   final emailController = TextEditingController().obs;

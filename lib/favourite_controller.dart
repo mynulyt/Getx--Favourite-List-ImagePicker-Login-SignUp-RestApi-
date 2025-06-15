@@ -13,6 +13,9 @@ class FavouriteController extends GetxController {
         'Graphs',
         'Guava',
         'papaya',
+        'papaya',
+        'papaya',
+        'papaya',
       ].obs;
   RxList tempFruitList = [].obs;
 

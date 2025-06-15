@@ -1,8 +1,6 @@
 import 'package:fav_list/Login_screem_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_instance/get_instance.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -29,6 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 20),
             TextFormField(
+              // obscureText: true,
               controller: controller.passwordController.value,
               decoration: InputDecoration(hintText: 'Enter your password...'),
             ),

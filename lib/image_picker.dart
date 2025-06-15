@@ -18,6 +18,7 @@ class _ImagePickerState extends State<ImagePicker> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Image Picker')),
+      //obx using for getx others does not work it
       body: Obx(
         () => Center(
           child: Column(

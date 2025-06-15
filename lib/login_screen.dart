@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                           child: Center(
                             child: Text(
-                              "Login",
+                              "Log in",
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 22,

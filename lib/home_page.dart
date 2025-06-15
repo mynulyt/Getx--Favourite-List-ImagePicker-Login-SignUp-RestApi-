@@ -19,6 +19,8 @@ class _HomePageState extends State<HomePage> {
     'Graphs',
     'Guava',
     'papaya',
+    'papaya',
+    'papaya',
   ];
   List<String> tempFruitList = [];
   @override

@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(title: 'Practice Getx', home: LoginScreen());
+    return GetMaterialApp(title: 'App of Getx', home: LoginScreen());
   }
 }
 

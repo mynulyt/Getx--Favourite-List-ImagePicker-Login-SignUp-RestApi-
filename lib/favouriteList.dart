@@ -43,7 +43,7 @@ class _HomePage2State extends State<HomePage2> {
                       controller.tempFruitList.contains(
                             controller.fruitList[index].toString(),
                           )
-                          ? Colors.red
+                          ? Colors.pink
                           : Colors.white,
                 ),
               ),

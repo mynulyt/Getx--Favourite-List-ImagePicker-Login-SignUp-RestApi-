@@ -1,6 +1,7 @@
 import 'package:fav_list/Login_screem_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+//Login page using getX
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

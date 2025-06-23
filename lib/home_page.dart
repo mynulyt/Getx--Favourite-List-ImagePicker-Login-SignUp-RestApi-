@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 color:
                     tempFruitList.contains(fruitList[index].toString())
                         ? Colors.white
-                        : Colors.red,
+                        : Colors.deepOrange,
               ),
             ),
           );
